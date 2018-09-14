@@ -1,0 +1,88 @@
+{% load static %}
+
+<html>
+<head>
+	<title>
+SUBSCRIBE TO OUR NEWSLETTER
+	</title>
+	<link rel="stylesheet" type="text/css"
+          href="{% static 'css/main.css' %}">
+
+
+</script>
+
+</head>
+<body>
+
+
+<header>
+    <nav>
+
+		<h2>
+			SUBSCRIBE TO OUR NEWSLETTER
+		</h2>
+
+    </nav>
+</header>
+<div id="form">
+
+<form id="simpleform">
+	<div id="same">
+		<h4>
+			NEWSLETTER SUBSCRIPTION
+		</h4>
+		<form method ="post">
+		    {% csrf_token %}
+		    {{ form.as_p}}
+		</form>
+	</div>
+<div id="main1">
+	<label for="email">Username
+	</label>
+	<input type="text" name="email" id="email">
+</div>
+
+<div id="main1">
+	<label for="email">Password
+	</label>
+	<input type="password" name="email" id="email">
+</div>
+
+<div id="main2">
+
+
+</div>
+<div id="cb2">
+
+
+</div>
+<div id="amit">
+        <input type="button" value="LOGIN" id="button" onclick="display()">
+
+</div>
+    <!--<button type="button" class="btn btn-danger">Danger</button>-->
+<!--<h1>{{myName}}</h1>-->
+
+<div id="last">
+
+
+
+
+</div>
+</form>
+</div>
+<div id="link">
+
+<a href="">English</a><a href="">(US)</a><a href="">EspaÃ±ol</a><a href="">PortuguÃªs </a><a href="">(Brasil)</a><a href="">Italiano</a><a href="">(France)</a><a href="">Deutsch</a>
+</div>
+
+<footer >
+
+	<H5>
+&copy;copyright 2018 NEWSLETTER
+	</H5>
+</footer>
+
+
+</body>
+

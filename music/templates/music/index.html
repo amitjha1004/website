@@ -1,0 +1,200 @@
+{% load static %}
+
+<html>
+<head>
+	<title>
+SUBSCRIBE TO OUR NEWSLETTER
+	</title>
+	<link rel="stylesheet" type="text/css"
+          href="{% static 'css/main.css' %}">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+/*
+   	var URL='https://2290nk8a3h.execute-api.ap-south-1.amazonaws.com/prod/entries'
+
+    var EmailId=$("#email").val();
+
+   	$.ajax({
+
+         	  type: 'GET',
+         	  url: URL,
+         	  dataType :"json",
+
+         	  data: {
+
+      			Email_id: EmailId
+
+    				},
+
+         	  success:function(data){
+
+                      	console.log('success',data);
+                        //data.Count;
+                      	alert("Subscribed " + data.Count + " times");
+                          //alert("ScannedCount is " + data.ScannedCount);
+
+                    },
+
+
+            error:function(result)
+                    {
+                    alert('ERROR');
+                   }
+
+         });
+
+    return false;
+
+  } */
+
+/*	function display(){
+
+    var x=document.getElementById("email").value;
+
+    var API_URL='https://2290nk8a3h.execute-api.ap-south-1.amazonaws.com/prod/entries'
+
+    var atposition=x.indexOf("@");
+	var dotposition=x.lastIndexOf(".");
+	if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+  alert("Not a valid e-mail address");
+  return;
+}
+  else
+  {
+		$.ajax({
+
+       	  type: "POST",
+       	  url: API_URL,
+       	  data : JSON.stringify({"Email_id":$('#email').val()}),
+       	  contentType :"application/json",
+
+       	  //success:function(data){
+               //     alert('Subscribed...!!');
+           //         location.reload();
+           //       },
+          //error:function(result)
+           //     {
+           //     alert('error');
+            //    }
+
+       });
+
+  	}
+
+  //setTimeout(function() {}, 10000);
+
+
+  var URL='https://2290nk8a3h.execute-api.ap-south-1.amazonaws.com/prod/entries'
+
+  var EmailId=$("#email").val();
+
+  $.ajax({
+
+          type: 'GET',
+          url: URL,
+          dataType :"json",
+
+          data: {
+
+          Email_id: EmailId
+
+          },
+
+          success:function(data){
+
+                      console.log('success',data);
+                      //data.Count;
+                      alert("Subscribed " + data.Count + " times");
+                        //alert("ScannedCount is " + data.ScannedCount);
+
+                  },
+
+
+          error:function(result)
+                  {
+                  alert('ERROR');
+                 }
+
+       });
+
+  return false;
+
+
+
+ }
+*/
+
+
+
+
+</script>
+
+</head>
+<body>
+
+<header>
+    <nav>
+
+		<h2>
+			SUBSCRIBE TO OUR NEWSLETTER
+		</h2>
+
+    </nav>
+</header>
+<div id="form">
+
+<form id="simpleform">
+	<div id="same">
+		<h4>
+			NEWSLETTER SUBSCRIPTION
+		</h4>
+	</div>
+<div id="main1">
+	<label for="email">Email
+	</label>
+	<input type="text" name="email" id="email">
+</div>
+
+<div id="main2">
+
+
+</div>
+<div id="cb2">
+
+
+</div>
+<div id="amit">
+        <input type="button" value="SUBMIT" id="button" onclick="display()">
+
+</div>
+    <!--<button type="button" class="btn btn-danger">Danger</button>-->
+<!--<h1>{{myName}}</h1>-->
+
+<div id="last">
+
+
+
+
+</div>
+</form>
+</div>
+<div id="link">
+
+<a href="">English</a><a href="">(US)</a><a href="">EspaÃ±ol</a><a href="">PortuguÃªs </a><a href="">(Brasil)</a><a href="">Italiano</a><a href="">(France)</a><a href="">Deutsch</a>
+</div>
+
+<footer >
+
+	<H5>
+&copy;copyright 2018 NEWSLETTER
+	</H5>
+</footer>
+
+
+</body>
+
+var EmailId=$("#email").val();
+
